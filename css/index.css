@@ -105,7 +105,7 @@ section {
   display: block;
 }
 body {
-  line-height: 1;
+  line-height: 1.5;
 }
 ol,
 ul {
@@ -181,6 +181,8 @@ header nav a {
 .intro {
   display: flex;
   flex-direction: column;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .introbottom {
   margin-top: 2%;
@@ -201,6 +203,7 @@ header nav a {
 .middle {
   border: 1px solid red;
   display: flex;
+  margin-bottom: 5%;
 }
 .middle .middleleft {
   border: 1px solid black;
