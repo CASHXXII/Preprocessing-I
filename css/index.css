@@ -173,6 +173,11 @@ header nav a {
   justify-content: flex-end;
   display: flex;
 }
+@media (max-width: 500px) {
+  header nav a {
+    justify-content: flex-start;
+  }
+}
 /* intro */
 .intro {
   display: flex;
