@@ -134,9 +134,6 @@ html,
 body {
   height: 100%;
 }
-header {
-  border: 1px solid green;
-}
 h1 {
   font-size: 3rem;
   margin-bottom: 2%;
@@ -147,6 +144,7 @@ h2 {
 h3 {
   font-size: 1.2rem;
   margin-bottom: 2%;
+  font-weight: bold;
 }
 .container {
   width: 100%;
@@ -160,48 +158,43 @@ h3 {
 header {
   display: flex;
   justify-content: flex-end;
-  border: 1px solid red;
 }
 header nav {
   display: flex;
   width: 75%;
   vertical-align: top;
   margin-top: 35px;
-  border: 1px solid green;
 }
 header nav a {
   font-size: 0.9rem;
-  color: gray;
+  color: black;
   text-decoration: none;
   width: 100%;
   justify-content: flex-end;
   display: flex;
-  border: 1px solid purple;
 }
+/* intro */
 .intro {
   display: flex;
   flex-direction: column;
   padding-bottom: 5%;
   padding-top: 5%;
+  background: #E9ECEF;
 }
-.introtop p {
+.intro .introtop p {
   font-size: 1.2rem;
 }
-.introbottom {
+.intro .introtop .headerimg {
+  height: 25%;
+  width: 25%;
+}
+.intro .introbottom {
   margin-top: 2%;
   padding-top: 2%;
   border-top: 1px solid gray;
 }
-.introbottom p {
+.intro .introbottom p {
   margin-bottom: 2%;
-}
-.headerimg {
-  height: 25%;
-  width: 25%;
-}
-.intro {
-  background: #E9ECEF;
-  border: 2px solid pink;
 }
 button {
   background-color: #828181;
@@ -209,34 +202,32 @@ button {
   padding: 1.1%;
   font-size: 1.1rem;
 }
+/* middle */
 .middle {
-  border: 1px solid red;
   display: flex;
   margin-bottom: 5%;
+  margin-top: 2%;
 }
 .middle .middleleft {
-  border: 1px solid black;
   width: 65%;
   padding-right: 3%;
 }
-.middleleft h2 {
+.middle .middleleft h2 {
   margin-bottom: 2%;
 }
 .bottom {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
 }
+th {
+  text-align: left;
+  font-weight: bold;
+}
 footer {
-  border: 1px solid yellow;
   text-align: center;
   background-color: #828181;
   color: white;
   padding-top: 2%;
   padding-bottom: 4%;
   font-size: 0.8rem;
-}
-th {
-  text-align: left;
-  font-weight: bold;
 }
