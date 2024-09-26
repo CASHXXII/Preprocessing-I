@@ -4,6 +4,13 @@
    License: none (public domain)
 */
 
+@second-color: #828181;
+
+.flexColumn(){
+	display: flex;
+	flex-direction: column;
+  }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +27,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -30,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -54,6 +61,135 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2%;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	margin-bottom: 2%;
+	font-weight: bold;
+}
+
+.container {
+	width: 100%;
+	max-width: 860px;
+	/* TB LR */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* header */
+
+header {
+	display: flex;
+	justify-content: flex-end;
+
+	nav {
+		display: flex;
+		width: 75%;
+		vertical-align: top;
+		margin-top: 35px;
+
+		a {
+			font-size: .9rem;
+			color: black;
+			text-decoration: none;
+			width: 100%;
+			justify-content: flex-end;
+			display: flex;
+
+			@media( max-width: 500px){
+				justify-content: flex-start;
+			  }
+		}
+	}
+}
+
+
+/* intro */
+
+.intro {
+	.flexColumn();
+	padding-bottom: 5%;
+	padding-top: 5%;
+	background: #E9ECEF;
+
+	.introtop p {
+		font-size: 1.2rem;
+	}
+
+	.introtop .headerimg {
+		height: 25%;
+		width: 25%;
+	}
+
+	.introbottom {
+		margin-top: 2%;
+		padding-top: 2%;
+		border-top: 1px solid gray;
+
+		p {
+			margin-bottom: 2%;
+		}
+	}
+}
+
+button {
+	background-color: @second-color;
+	color: white;
+	padding: 1.1%;
+	font-size: 1.1rem;
+}
+
+
+/* middle */
+
+
+.middle {
+	display: flex;
+	margin-bottom: 5%;
+	margin-top: 2%;
+
+	.middleleft {
+		width: 65%;
+		padding-right: 3%;
+
+		h2 {
+			margin-bottom: 2%;
+		}
+	}
+}
+
+
+.bottom {
+	.flexColumn();
+}
+
+th {
+	text-align: left;
+	font-weight: bold;
+}
+
+
+footer {
+	text-align: center;
+	background-color: @second-color;
+	color: white;
+	padding-top: 2%;
+	padding-bottom: 4%;
+	font-size: .8rem;
+}
+
+
 
